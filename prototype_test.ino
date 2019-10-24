@@ -67,7 +67,7 @@ void setup() {
   myMotor1->setSpeed(100);
   myMotor1->run(FORWARD);
   myMotor2->setSpeed(100);
-  myMotor2->run(BACKWARD);
+  myMotor2->run(FORWARD);
 
   myMotor1->run(RELEASE);
   myMotor2->run(RELEASE);
@@ -84,24 +84,28 @@ void loop() {
   // Fill along the length of the strip in various colors...
 
   myMotor1->run(FORWARD);
-  myMotor2->run(BACKWARD);
+  myMotor2->run(FORWARD);
 
   myMotor1->setSpeed(100);  
     myMotor2->setSpeed(100);
-    delay(25000); 
 lights(100);
+    delay(25000); 
+
     myMotor1->setSpeed(200);  
     myMotor2->setSpeed(200);
-    delay(15000); 
 lights(200);
+    delay(15000); 
+
     myMotor1->setSpeed(50);  
     myMotor2->setSpeed(50);
-    delay(15000); 
 lights(50);
+    delay(15000); 
+
     myMotor1->setSpeed(100);  
     myMotor2->setSpeed(100);
-    delay(15000); 
 lights(100);
+    delay(15000); 
+
     for(int i=100;i<=200;i++){
     myMotor1->setSpeed(i);  
     myMotor2->setSpeed(i);      
@@ -111,20 +115,24 @@ lights(100);
 
     myMotor1->setSpeed(200);  
     myMotor2->setSpeed(200);
-    delay(30000);
 lights(200);
+    delay(30000);
+
     myMotor1->setSpeed(50);  
     myMotor2->setSpeed(50);
-    delay(15000);
 lights(50);
+    delay(15000);
+
     myMotor1->setSpeed(100);  
     myMotor2->setSpeed(100);
-    delay(17000);
 lights(100);
+    delay(17000);
+
     myMotor1->setSpeed(50);  
     myMotor2->setSpeed(50);
-    delay(15000);
 lights(50);
+    delay(15000);
+
     for(int i=50;i<=200;i++){
     myMotor1->setSpeed(i);  
     myMotor2->setSpeed(i);      
@@ -134,12 +142,14 @@ lights(50);
 
     myMotor1->setSpeed(200);  
     myMotor2->setSpeed(200);
-    delay(30000);
 lights(200);
+    delay(30000);
+
     myMotor1->setSpeed(100);  
     myMotor2->setSpeed(100);
-    delay(30000);
 lights(100);
+    delay(30000);
+
     for(int i=100;i<=200;i++){
     myMotor1->setSpeed(i);  
     myMotor2->setSpeed(i);      
@@ -149,8 +159,9 @@ lights(100);
 
     myMotor1->setSpeed(200);  
     myMotor2->setSpeed(200);
-    delay(30000);
 lights(200);
+    delay(30000);
+
     for(int i=200;i>=0;i--){
     myMotor1->setSpeed(i);  
     myMotor2->setSpeed(i);      
@@ -287,7 +298,7 @@ void theaterChaseRainbow(int wait) {
       strip.show();                // Update strip with new contents
       delay(wait);                 // Pause for a moment
       firstPixelHue += 65536 / 90; // One cycle of color wheel over 90 frames
-    }
+    } 
   }
 }
 
@@ -308,4 +319,5 @@ void Limbs() {
     delay(15);                       // waits 15ms for the servo to reach the position
   }
 
+  
 }
