@@ -4,7 +4,7 @@
 Compilation of the history of robots performing in plays, found on the [Robot Theatre website](https://www.robottheatre.co.uk/robot-performances).
 
 ## Robots in Physical Comedy
-### Comedy Central show called Bad Robots, featuring robots used in pranks.
+#### Comedy Central show called Bad Robots, featuring robots used in pranks.
 
 [![Bad Robots Trailer](https://img.youtube.com/vi/JDiytJb2Kvo/0.jpg)](https://www.youtube.com/watch?v=JDiytJb2Kvo)
 
