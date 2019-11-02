@@ -13,7 +13,7 @@
 [![Fake Military Robot (Bosstown Dynamics)](https://img.youtube.com/vi/y3RIHnK0_NE/0.jpg)](https://www.youtube.com/watch?v=y3RIHnK0_NE)
 
 ## "Emotional" Robots in Media
-![](https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/TL_Payoff_1-Sht_v6_Lg23.jpg)
+![](https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/TL_Payoff_1-Sht_v6_Lg23.jpg|width=100)
 
 #### One of the main characters in the movie [Tomorrowland (2015)](https://mixdrop.co/f/03m9c) is a robot, depicted to have a complex relationship with the human characters, which is beyond even her own advanced understanding. This relationship is heavily emphasized during the climax point of the film.
 
