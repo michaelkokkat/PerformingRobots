@@ -29,4 +29,4 @@
 
 #### (a) I think the showcase should be formatted in a sketch/vignette style, with short performances by individuals/teams, and with a final performance involving all the robots.
 
-#### (b) Scary robot "kills" another robot, and they both burst into a choreographed musical number.
+#### (b) Scary robot "kills" another robot, and they both burst into a choreographed musical number. Kind of like [this](https://www.youtube.com/watch?v=aVZUVeMtYXc). Viewer discretion advised.
