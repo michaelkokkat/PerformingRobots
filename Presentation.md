@@ -21,7 +21,7 @@
 
 #### Westworld is a must-watch TV show for anyone remotely interested in the various philosphies behind differentiating robots and humans. The show frequently ventures into unexplored territory in terms of the boundary between humans and robots designed to imitate them. This is especially evident in a key scene where a [main character who is commonly believed to be a human is revealed to be a robot](https://www.youtube.com/watch?v=o0iAY0f-BIM).
 
-[![](hhttps://images-na.ssl-images-amazon.com/images/I/51%2BD6mC%2BMfL.jpg)](https://en.wikipedia.org/wiki/Do_Androids_Dream_of_Electric_Sheep%3F)
+[![](https://images-na.ssl-images-amazon.com/images/I/51%2BD6mC%2BMfL.jpg)](https://en.wikipedia.org/wiki/Do_Androids_Dream_of_Electric_Sheep%3F)
 
 #### The basis for the "Blade Runner" movie franchise, ['Do Androids Dream of Electric Sheep?'](https://en.wikipedia.org/wiki/Do_Androids_Dream_of_Electric_Sheep%3F)
 
