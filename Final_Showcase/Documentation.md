@@ -8,6 +8,8 @@
 ## Robot Specifications
 Both robots have similar dimensions, with Red being longer than Blue, and being made in two separate parts (pre-broken). Both robots are primarily constructed out of wood, with cardboard lids for easier access to the electronics inside.
 
+![System Diagram Red](https://raw.githubusercontent.com/michaelkokkat/PerformingRobots/master/Final_Showcase/Pictures/Red.png)
+
 The robots are controlled by Arduino microcontrollers and are entirely autonomous. The arms attached to the servos are made from foam core board, and the "blade" attached to Red is made from recycled copper PCB.
 
 Red and Blue are spray-painted their respective colors.
