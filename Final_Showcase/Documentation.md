@@ -10,6 +10,8 @@ Both robots have similar dimensions, with Red being longer than Blue, and being 
 
 ![System Diagram Red](https://raw.githubusercontent.com/michaelkokkat/PerformingRobots/master/Final_Showcase/Pictures/Red.png)
 
+![System Diagram Blue](https://raw.githubusercontent.com/michaelkokkat/PerformingRobots/master/Final_Showcase/Pictures/Blue.png)
+
 The robots are controlled by Arduino microcontrollers and are entirely autonomous. The arms attached to the servos are made from foam core board, and the "blade" attached to Red is made from recycled copper PCB.
 
 Red and Blue are spray-painted their respective colors.
