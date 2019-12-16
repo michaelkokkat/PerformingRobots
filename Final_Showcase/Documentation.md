@@ -8,17 +8,29 @@
 ## Robot Specifications
 Both robots have similar dimensions, with Red being longer than Blue, and being made in two separate parts (pre-broken). Both robots are primarily constructed out of wood, with cardboard lids for easier access to the electronics inside.
 
-The robots are controlled by Arduino microcontrollers and are entirely autonomous. The arms attached to the servos are made from foam core board, and the "blade" attached to Red is made from recycled copper PCB. 
+The robots are controlled by Arduino microcontrollers and are entirely autonomous. The arms attached to the servos are made from foam core board, and the "blade" attached to Red is made from recycled copper PCB.
+
+Red and Blue are spray-painted their respective colors.
 
 ## List of Important Parts
-
+  * 2x 11V Lithium battery pack
+  * 2x Arduino Uno
+  * 2x Adafruit MotorShields
+  * 16x AA batteries
+  * 4x 4-cell battery case
+  * 4x Large DC Motor
+  * 2x High Torque Servo Motor
+  * 1x Toggle Switch
+  * Lots of velcro, duct tape, zipties, and hot glue
 
 ## Challenges Faced
+  * Lack of sturdiness in original prototypes
+  * Servo arm not working
+  * Screw terminal short circuiting
+  * Rubber wheel 
 
-Overall project concept and description
-Overall picture(s)
+
 System diagram of the hardware
-List of important parts (don’t include wires, resistors, etc.)
+
 Pictures of the electronics
 
-Discuss 3-5 problems you ran into and how you resolved them or worked around them
