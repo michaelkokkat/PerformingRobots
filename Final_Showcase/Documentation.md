@@ -6,4 +6,19 @@
 
 
 ## Robot Specifications
-#### There are two robots in this performance, of similar build
+Both robots have similar dimensions, with Red being longer than Blue, and being made in two separate parts (pre-broken). Both robots are primarily constructed out of wood, with cardboard lids for easier access to the electronics inside.
+
+The robots are controlled by Arduino microcontrollers and are entirely autonomous. The arms attached to the servos are made from foam core board, and the "blade" attached to Red is made from recycled copper PCB. 
+
+## List of Important Parts
+
+
+## Challenges Faced
+
+Overall project concept and description
+Overall picture(s)
+System diagram of the hardware
+List of important parts (don’t include wires, resistors, etc.)
+Pictures of the electronics
+
+Discuss 3-5 problems you ran into and how you resolved them or worked around them
