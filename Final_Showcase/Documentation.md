@@ -25,11 +25,13 @@ Red and Blue are spray-painted their respective colors.
 
 ## Challenges Faced
   * Lack of sturdiness in original prototype:
-         
-         * The original prototype was constructed entirely out of cardboard, and as such coudln't support the weight of the electronics between the two heavy DC motors. This was solved by remaking the robots out of wood in the Scene Shop.
-  * Servo arm not working
-  * Screw terminal short circuiting
-  * Rubber wheel 
+          The original prototype was constructed entirely out of cardboard, and as such couldn't support the weight of the electronics between the two heavy DC motors. This was solved by remaking the robots out of wood in the Scene Shop.
+  * Servo arm not working for Blue:
+          This turned out to be a fault with the servo itself, as the code worked on other tester servos after multiple trials (and re-wiring the motor shield connections to prevent possible short circuits).
+  * Screw terminal short circuiting in Red:
+          The MotorShield's M1 & M2 screw terminal short circuiting during a performance rehearsal hours before the performance, due to exposed wiring and a lack of anchoring for the inner components. This was resolved by securely inserting and screwing in the wires into the M2 terminal, as well as anchoring down all live components in both robots.
+  * Rubber wheel:
+          The rubber track of the large DC motor wheel was not securely fixed in place; this led to it coming off before the performance and preventing the two robots from lining up as programmed and rehearsed. This issue was overcome by literally kicking the robot (in order to break it, as that was a crucial part of the performance).
 
 
 System diagram of the hardware
