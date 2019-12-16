@@ -1,1 +1,1 @@
-# FOlder with pictures
+# Folder with pictures
