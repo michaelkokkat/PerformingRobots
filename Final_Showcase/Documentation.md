@@ -6,15 +6,22 @@
 
 
 ## Robot Specifications
-Both robots have similar dimensions, with Red being longer than Blue, and being made in two separate parts (pre-broken). Both robots are primarily constructed out of wood, with cardboard lids for easier access to the electronics inside.
+Both robots have similar dimensions, with Red being longer than Blue, and being made in two separate parts (pre-broken). Both robots are primarily constructed out of wood, with cardboard lids for easier access to the electronics inside. The arms attached to the servos are made from foam core board, and the "blade" attached to Red is made from recycled copper PCB.
 
 ![System Diagram Red](https://raw.githubusercontent.com/michaelkokkat/PerformingRobots/master/Final_Showcase/Pictures/Red.png)
+Basic System Diagram of Red's Hardware
 
 ![System Diagram Blue](https://raw.githubusercontent.com/michaelkokkat/PerformingRobots/master/Final_Showcase/Pictures/Blue.png)
-
-The robots are controlled by Arduino microcontrollers and are entirely autonomous. The arms attached to the servos are made from foam core board, and the "blade" attached to Red is made from recycled copper PCB.
+Basic System Diagram of Blue's Hardware
 
 Red and Blue are spray-painted their respective colors.
+The robots are controlled by Arduino microcontrollers and are entirely autonomous.
+
+![Electronics Red](https://raw.githubusercontent.com/michaelkokkat/PerformingRobots/master/Final_Showcase/Pictures/Red_Inside.png)
+Electronic components of Red
+
+![Electronics Blue](https://raw.githubusercontent.com/michaelkokkat/PerformingRobots/master/Final_Showcase/Pictures/Blue_Inside.png)
+Electronic components of Blue
 
 ## List of Important Parts
   * 2x 11V Lithium battery pack
@@ -36,9 +43,4 @@ Red and Blue are spray-painted their respective colors.
           The MotorShield's M1 & M2 screw terminal short circuiting during a performance rehearsal hours before the performance, due to exposed wiring and a lack of anchoring for the inner components. This was resolved by securely inserting and screwing in the wires into the M2 terminal, as well as anchoring down all live components in both robots.
   * Rubber wheel:
           The rubber track of the large DC motor wheel was not securely fixed in place; this led to it coming off before the performance and preventing the two robots from lining up as programmed and rehearsed. This issue was overcome by literally kicking the robot (in order to break it, as that was a crucial part of the performance).
-
-
-System diagram of the hardware
-
-Pictures of the electronics
 
