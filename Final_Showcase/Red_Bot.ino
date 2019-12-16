@@ -23,10 +23,10 @@ const int blade =  7;
 void setup() {
 
   Serial.begin(9600); 
-  servo.attach(10);
+  servo.attach(10);   //assign pin 10 to 'servo'
   
 
-  AFMS.begin();  
+  AFMS.begin();  //Motorshield initialized
 
   myMotor1->setSpeed(200);
   myMotor1->run(FORWARD);
@@ -45,57 +45,58 @@ void setup() {
 
 void loop() {
 
-  uint8_t i;
-  delay (5000);
+  uint8_t i;  //intiializing i for 'for' loop use
+  delay (5000);   //wait 5 seconds before starting
 
   forward();
   myMotor1->setSpeed(200);  
   myMotor2->setSpeed(200);
-  delay(900);
-  stopped();
+  delay(900);   //move forward for .9 seconds in order cue the start of the audio track
+  stopped();  //stop for a second in accordance with the audio track
   delay(1000);
   
-  wiggle(); //900 ms
+  wiggle(); // lasts 900 ms (shakes 'awake')
 
   forward();
-  myMotor1->setSpeed(120);  
+  myMotor1->setSpeed(120);    //moves forward towards centerstage
   myMotor2->setSpeed(120);
   delay(4600);  //5500 ms
 
-  stopped();
+  stopped();    //stops upon seeing Blue
   delay(4000);  // 9500 ms
   
   forward();
-  myMotor1->setSpeed(150);  
+  myMotor1->setSpeed(150);      //leers at Blue, steadily cornering him
   myMotor2->setSpeed(150);
   delay(11000); //20500 ms
   
   for (pos = 0; pos < 65; pos ++) { 
     servo.write(pos); 
-    delay(50);
+    delay(50);            //threateningly lowering arm without blade rotation
   }
 
   for (pos = 65; pos > 0; pos --) { 
-    servo.write(pos); 
+    servo.write(pos);     //threateningly raising arm without blade rotation
     delay(50);  
   }
-  stopped();
+  
+  stopped();    //stopping to deliver dialogue
   delay(7000);  //27500 ms
   
   forward();
-  myMotor1->setSpeed(250);  
+  myMotor1->setSpeed(250);    //lunges forward at Blue
   myMotor2->setSpeed(250);
   delay(1000); //28500 ms
   
   forward();
-  myMotor1->setSpeed(150);  
+  myMotor1->setSpeed(150);    //continues leering at Blue
   myMotor2->setSpeed(150);
   delay(13000); //41500 ms
   
   for (pos = 0; pos < 65; pos ++) { 
     servo.write(pos); 
     delay(10);
-    if (pos > 40){
+    if (pos > 40){                  //lowers arm while blade spins
       digitalWrite(blade, HIGH);
       delay(50);               
     }
@@ -103,21 +104,21 @@ void loop() {
   
   forward();
   myMotor1->setSpeed(250);  
-  myMotor2->setSpeed(250);
+  myMotor2->setSpeed(250);    //lunges at Blue with lowered blade spinning
   delay(1000); //42500 ms
   
-  digitalWrite(blade, LOW);
+  digitalWrite(blade, LOW);     //stops blade
   
   for (pos = 65; pos > 0; pos --) { 
     servo.write(pos); 
     delay(10);
-    if (pos > 40){
+    if (pos > 40){            //raises arm back up with blade spinning temporarily
       digitalWrite(blade, HIGH);
       delay(50);               
     }
   }
   
-  digitalWrite(blade, LOW);
+  digitalWrite(blade, LOW);   //stops blade
   
   right();
   delay(1500);
@@ -125,7 +126,7 @@ void loop() {
   left();
   delay(1500);
 
-  backright();
+  backright();            //threatening circling of Blue
   delay(2500);
 
   backleft();
@@ -140,7 +141,7 @@ void loop() {
   inplaceright();
   delay(4000);  //61500 ms
 
-  inplaceleft();
+  inplaceleft();              //continued threatening circling of Blue
   delay(1000);  //62500 ms
 
   stopped();
@@ -153,10 +154,10 @@ void loop() {
   delay(1000);  //69500 ms
 
   stopped();
-  delay(2000);  //71500 ms
+  delay(2000);  //71500 ms      //gets broken in half by Blue
 
   for(i = 0; i<28; i++){
-    wiggle();
+    wiggle();           //death throes
   }   //97600 ms
 
   left();
@@ -182,11 +183,11 @@ void loop() {
   myMotor2->setSpeed(250);
   delay(1000); //120200 ms  
 
-  stopped();
+  stopped();                  //is "dead" during this time
   delay(35500); //157700 ms
 
   wiggle();
-  wiggle();
+  wiggle();         //comes back to life and wiggles to song
   wiggle(); //160100 ms
 
   forward();
@@ -196,77 +197,77 @@ void loop() {
 
   backward();
   myMotor1->setSpeed(250);  
-  myMotor2->setSpeed(250);
+  myMotor2->setSpeed(250);    // moving back and forth to music
   delay(1000); //162100 ms
 
-  stopped();
+  stopped();          //in time to music for effect
   delay(900); //163000 ms
 
   forward();
   myMotor1->setSpeed(150);  
-  myMotor2->setSpeed(150);
+  myMotor2->setSpeed(150);    //approaching audience for "bow"
   delay(1700); //180000 ms
   
   while(1){
   stopped();
-  delay(1500);
+  delay(1500);      //preventing further movement
   }
 
 }
 
-void forward(){
+void forward(){     //setting motors to move forward
   myMotor1->run(FORWARD);
   myMotor2->run(FORWARD);
 }
 
-void backward(){
+void backward(){      //setting motors to move backward
   myMotor1->run(BACKWARD);
   myMotor2->run(BACKWARD);
 }
 
-void inplaceright(){
+void inplaceright(){      //setting motors to turn in opposite directions at the same speed towards the right
   myMotor1->run(BACKWARD);
   myMotor2->run(FORWARD);
   myMotor1->setSpeed(250);  
   myMotor2->setSpeed(250);
 }
 
-void inplaceleft(){
+void inplaceleft(){       //setting motors to turn in opposite directions at the same speed towards the left
   myMotor1->run(FORWARD);
   myMotor2->run(BACKWARD);
   myMotor1->setSpeed(250);  
   myMotor2->setSpeed(250);
 }
 
-void right(){
+void right(){       //setting motors to move in the same direction at different speed to turn right
   myMotor1->run(FORWARD);
   myMotor2->run(FORWARD);
   myMotor1->setSpeed(170);  
   myMotor2->setSpeed(250);
 }
 
-void backright(){
+void backright(){     //setting motors to move in the same direction at different speed to reverse the right() movement
   myMotor1->run(BACKWARD);
   myMotor2->run(BACKWARD);
   myMotor1->setSpeed(250);  
   myMotor2->setSpeed(170);  
 }
 
-void left(){
+void left(){        //setting motors to move in the same direction at different speed to turn left
   myMotor1->run(FORWARD);
   myMotor2->run(FORWARD);
   myMotor1->setSpeed(250);  
   myMotor2->setSpeed(170);
 }
-
-void backleft(){
+  
+void backleft(){      //setting motors to move in the same direction at different speed to reverse the left() movement
   myMotor1->run(BACKWARD);
   myMotor2->run(BACKWARD);
   myMotor1->setSpeed(170);  
   myMotor2->setSpeed(250);  
 }
 
-void wiggle(){  //900 ms
+void wiggle(){  //900 ms long wiggle back and forth
   inplaceright();
   delay(200);
   inplaceleft();
@@ -278,7 +279,7 @@ void wiggle(){  //900 ms
   delay(200);
 }
 
-void stopped(){
+void stopped(){     //stopping motors
   forward();
   myMotor1->setSpeed(0);  
   myMotor2->setSpeed(0);
