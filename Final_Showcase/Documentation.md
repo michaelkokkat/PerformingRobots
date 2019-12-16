@@ -25,6 +25,7 @@ Red and Blue are spray-painted their respective colors.
 
 ## Challenges Faced
   * Lack of sturdiness in original prototype:
+         
          * The original prototype was constructed entirely out of cardboard, and as such coudln't support the weight of the electronics between the two heavy DC motors. This was solved by remaking the robots out of wood in the Scene Shop.
   * Servo arm not working
   * Screw terminal short circuiting
